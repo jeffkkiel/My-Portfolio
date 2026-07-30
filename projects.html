@@ -12,6 +12,20 @@
     ></script>
   </head>
   <body>
+    <!-- Loader -->
+    <div id="loader">
+      <div class="loader-bg"></div>
+
+      <div class="loader-card">
+        <h1>JB.</h1>
+
+        <p id="loading-text">Initializing Portfolio...</p>
+
+        <div class="loading-bar">
+          <span></span>
+        </div>
+      </div>
+    </div>
     <!-- Navigation -->
     <header>
       <nav>
@@ -27,13 +41,13 @@
             <a href="about.html">About</a>
           </li>
           <li>
-            <a href="projects.html">Projects</a>
+            <a href="projects.html" class="active">Projects</a>
           </li>
           <li>
             <a href="skills.html">Skills</a>
           </li>
           <li>
-            <a href="contact.html" class="active">Contact Me</a>
+            <a href="contact.html">Contact Me</a>
           </li>
         </ul>
 
@@ -41,6 +55,361 @@
       </nav>
     </header>
     <main>
+      <section id="projects-hero">
+        <p class="section-tag">Projects</p>
+
+        <h1>Things I've Built</h1>
+
+        <p>
+          A collection of projects I've built throughout my Computer Science
+          journey, ranging from beginner console applications to full web
+          development projects.
+        </p>
+      </section>
+
+      <section id="featured-projects">
+        <div class="section-title">
+          <p class="section-tag">Featured</p>
+
+          <h2>Main Projects</h2>
+        </div>
+
+        <div class="featured-grid">
+          <!-- NBA -->
+          <article class="featured-card">
+            <img src="images/website-overview.png" alt="NBA Website" />
+
+            <div class="project-content">
+              <h3>NBA Website</h3>
+
+              <p>
+                A modern responsive basketball website featuring teams,
+                schedules, player profiles, and interactive pages.
+              </p>
+
+              <div class="project-buttons">
+                <a href="https://jeffkkiel.github.io/NBA-Universe/"
+                  >Live Demo</a
+                >
+
+                <a href="https://github.com/jeffkkiel/NBA-Universe">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Company -->
+
+          <article class="featured-card">
+            <img src="images/company-preview.png" alt="Company Simulation" />
+
+            <div class="project-content">
+              <h3>Company Simulation System</h3>
+
+              <p>
+                A Python OOP project simulating employees, payroll, attendance,
+                and inventory management.
+              </p>
+
+              <div class="project-buttons">
+                <a
+                  href="https://github.com/ConFlow24/Company-Simulation-OOP-Project"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="mini-projects">
+        <div class="section-title">
+          <p class="section-tag">Project Library</p>
+
+          <h2>Mini Projects</h2>
+        </div>
+        <details class="project-category">
+          <summary>
+            <span>Java Data Structures & Algorithms</span>
+
+            <span>8 Projects</span>
+          </summary>
+
+          <div class="mini-grid">
+            <article class="mini-card">
+              <div class="project-header">
+                <h3>Book Stack Management System</h3>
+
+                <span class="difficulty easy">Easy</span>
+              </div>
+
+              <p>
+                A console-based Java application that manages books using the
+                Stack data structure.
+              </p>
+
+              <div class="tags">
+                <span>Stack</span>
+
+                <span>Arrays</span>
+                <span>OOP</span>
+              </div>
+
+              <a href="downloadsJava/BookStackManagementSystem.zip" download>
+                <i class="fa-solid fa-download"></i>
+                Download ZIP
+              </a>
+            </article>
+
+            <article class="mini-card">
+              <div class="project-header">
+                <h3>Library Management System</h3>
+
+                <span class="difficulty easy">Easy</span>
+              </div>
+
+              <p>
+                A menu-driven CRUD application for managing books, borrowers,
+                and lending records using Object-Oriented Programming
+                principles.
+              </p>
+
+              <div class="tags">
+                <span>Arrays</span>
+                <span>CRUD</span>
+                <span>Input Validation</span>
+              </div>
+
+              <a href="downloadsJava/LibraryManagementSystem.zip" download>
+                <i class="fa-solid fa-download"></i>
+                Download ZIP
+              </a>
+            </article>
+
+            <article class="mini-card">
+              <div class="project-header">
+                <h3>Student Record Management System</h3>
+
+                <span class="difficulty easy">Easy</span>
+              </div>
+
+              <p>
+                Stores and manages student information with features for adding,
+                updating, searching, and deleting records in a console
+                application.
+              </p>
+
+              <div class="tags">
+                <span>Arrays</span>
+                <span>Linear Search</span>
+                <span>Binary Search</span>
+                <span>Bubble Sort</span>
+                <span>Prefix Sum</span>
+                <span>Recursion</span>
+              </div>
+
+              <a
+                href="downloadsJava/StudentRecordManagementSystem.zip"
+                download
+              >
+                <i class="fa-solid fa-download"></i>
+                Download ZIP
+              </a>
+            </article>
+            <article class="mini-card">
+              <div class="project-header">
+                <h3>Library Borrowing Management System</h3>
+
+                <span class="difficulty medium">Medium</span>
+              </div>
+
+              <p>
+                A queue-based system for managing patient arrivals and services
+                using the First-In, First-Out (FIFO) principle.
+              </p>
+
+              <div class="tags">
+                <span>Queue</span>
+                <span>FIFO</span>
+                <span>Arrays</span>
+                <span>OOP</span>
+              </div>
+
+              <a
+                href="downloadsJava/HospitalQueueManagementSystem.zip"
+                download
+              >
+                <i class="fa-solid fa-download"></i>
+                Download ZIP
+              </a>
+            </article>
+
+            <article class="mini-card">
+              <div class="project-header">
+                <h3>University Student Management System</h3>
+
+                <span class="difficulty medium">Medium</span>
+              </div>
+
+              <p>
+                A console-based Java application for managing university student
+                records.
+              </p>
+
+              <div class="tags">
+                <span>ArrayList</span>
+                <span>Stack</span>
+                <span>Queue</span>
+                <span>Priority Queue</span>
+                <span>Deque</span>
+                <span>Input Vlidation</span>
+              </div>
+
+              <a
+                href="downloadsJava/UniversityStudentManagementSystem.zip"
+                download
+              >
+                <i class="fa-solid fa-download"></i>
+                Download ZIP
+              </a>
+            </article>
+            <article class="mini-card">
+              <div class="project-header">
+                <h3>Car Dealership Management System (Quick Sort)</h3>
+
+                <span class="difficulty hard">Hard</span>
+              </div>
+
+              <p>
+                A console-based Java application simulating a car dealership,
+                managing customers, car inventory, and purchase transactions.
+              </p>
+
+              <div class="tags">
+                <span>Quick Sort</span>
+                <span>Recursion</span>
+                <span>Arrays</span>
+                <span>OOP</span>
+              </div>
+
+              <a href="downloadsJava/QuickSort.zip" download>
+                <i class="fa-solid fa-download"></i>
+                Download ZIP
+              </a>
+            </article>
+            <article class="mini-card">
+              <div class="project-header">
+                <h3>Library Borrowing Management System</h3>
+
+                <span class="difficulty hard">Hard</span>
+              </div>
+
+              <p>
+                A modular, multi-class Java application for managing library
+                users and book borrowing, split across six files with dedicated
+                manager classes for each responsibility.
+              </p>
+
+              <div class="tags">
+                <span>OOP</span>
+                <span>CRUD</span>
+                <span>Bubble Sort</span>
+                <span>Selection Sort</span>
+                <span>Insertion Sort</span>
+              </div>
+
+              <a
+                href="downloadsJava/LibraryBorrowingManagementSystem.zip"
+                download
+              >
+                <i class="fa-solid fa-download"></i>
+                Download ZIP
+              </a>
+            </article>
+            <article class="mini-card">
+              <div class="project-header">
+                <h3>
+                  Online Store Management System (Insertion Sort & Merge Sort)
+                </h3>
+                <span class="difficulty hard">Hard</span>
+              </div>
+
+              <p>
+                A console-based Java application for managing online store
+                orders, with a strong focus on visualizing how sorting
+                algorithms work internally.
+              </p>
+
+              <div class="tags">
+                <span>Insertion Sort</span>
+                <span>Merge Sort</span>
+                <span>Recursion</span>
+                <span>Arrays</span>
+              </div>
+
+              <a href="downloadsJava/QuickSort.zip" download>
+                <i class="fa-solid fa-download"></i>
+                Download ZIP
+              </a>
+            </article>
+          </div>
+
+          <!-- Python -->
+        </details>
+        <details class="project-category">
+          <summary>
+            <span>Python Projects</span>
+
+            <span>8 Projects</span>
+          </summary>
+
+          <div class="mini-grid">
+            <article class="mini-card">
+              <h3>Inventory System</h3>
+
+              <p>CRUD inventory management using dictionaries.</p>
+
+              <div class="tags">
+                <span>Dictionary</span>
+
+                <span>CRUD</span>
+              </div>
+
+              <a href="downloadsJava/SchoolManagementSystem.zip" download>
+                <i class="fa-solid fa-download"></i>
+                Download ZIP
+              </a>
+            </article>
+          </div>
+        </details>
+        <details class="project-category">
+          <summary>
+            <span>HTML • CSS • JavaScript</span>
+
+            <span>6 Projects</span>
+          </summary>
+
+          <div class="mini-grid">
+            <article class="mini-card">
+              <h3>Restaurant Website</h3>
+
+              <p>Responsive landing page built using Flexbox and Grid.</p>
+
+              <div class="tags">
+                <span>HTML</span>
+
+                <span>CSS</span>
+
+                <span>Responsive</span>
+              </div>
+
+              <a href="downloadsJava/SchoolManagementSystem.zip" download>
+                <i class="fa-solid fa-download"></i>
+                Download ZIP
+              </a>
+            </article>
+          </div>
+        </details>
+      </section>
       <!-- footer -->
       <footer>
         <div>
@@ -90,5 +459,6 @@
         <p>© 2026 Jeff Belnas. All Rights Reserved.</p>
       </footer>
     </main>
+    <script src="js/loader.js"></script>
   </body>
 </html>

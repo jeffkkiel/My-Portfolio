@@ -576,3 +576,245 @@ footer > p{
     box-shadow:0 12px 30px rgba(94,161,255,.15);
 
 }
+
+/* ===================================
+   LOADER
+=================================== */
+
+#loader{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#070B14;
+
+    z-index:999999;
+
+    overflow:hidden;
+
+    transition:opacity .4s ease;
+
+}
+.loader-bg{
+
+    position:absolute;
+
+    inset:0;
+
+    overflow:hidden;
+
+    filter:blur(140px);
+
+}
+.loader-bg::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    border-radius:50%;
+
+    background:#5ea1ff;
+
+    left:-120px;
+
+    top:-120px;
+
+    animation:blueMove 9s ease-in-out infinite alternate;
+
+}
+.loader-bg::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+
+    height:450px;
+
+    border-radius:50%;
+
+    background:#8b7cff;
+
+    right:-120px;
+
+    bottom:-120px;
+
+    animation:purpleMove 10s ease-in-out infinite alternate;
+
+}
+
+#loader::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    border-radius:50%;
+
+    background:#5eead4;
+
+    animation:cyanMove 8s ease-in-out infinite alternate;
+
+}
+
+.loader-card{
+
+    position:relative;
+
+    z-index:10;
+
+    width:420px;
+
+    padding:55px;
+
+    border-radius:35px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(30px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    text-align:center;
+
+    box-shadow:0 20px 70px rgba(0,0,0,.35);
+
+}
+.loader-card h1{
+
+    font-size:4rem;
+
+    margin-bottom:20px;
+
+    letter-spacing:3px;
+
+}
+
+.loader-card p{
+
+    color:var(--gray);
+
+    margin-bottom:35px;
+
+}
+.loading-bar{
+
+    width:100%;
+
+    height:5px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.08);
+
+    overflow:hidden;
+
+}
+
+.loading-bar span{
+
+    display:block;
+
+    height:100%;
+
+    width:0;
+
+    background:linear-gradient(
+        90deg,
+        #5ea1ff,
+        #8b7cff,
+        #5eead4
+    );
+
+    animation:progress 1s ease forwards;
+
+}
+
+@keyframes progress{
+
+    to{
+
+        width:100%;
+
+    }
+
+}
+
+@keyframes blueMove{
+
+    from{
+
+        transform:translate(0,0);
+
+    }
+
+    to{
+
+        transform:translate(320px,180px);
+
+    }
+
+}
+
+@keyframes purpleMove{
+
+    from{
+
+        transform:translate(0,0);
+
+    }
+
+    to{
+
+        transform:translate(-260px,-170px);
+
+    }
+
+}
+
+@keyframes cyanMove{
+
+    from{
+
+        transform:translate(-100px,100px);
+
+    }
+
+    to{
+
+        transform:translate(200px,-200px);
+
+    }
+
+}
+main{
+    animation:fadeIn .8s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
